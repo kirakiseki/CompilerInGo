@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"CompilerInGo/lexer"
+	"CompilerInGo/utils"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	utils.InitLogger("DEBUG")
+	lex := lexer.NewLexer("./test/sample.program")
+	lex.TraverseRune()
 }
