@@ -1,6 +1,8 @@
 package utils
 
-import "github.com/kpango/glg"
+import (
+	"github.com/kpango/glg"
+)
 
 func InitLogger(level string) {
 	// 按照level日志等级初始化logger
@@ -10,6 +12,7 @@ func InitLogger(level string) {
 		glg.Get().SetMode(glg.STD).SetLevel(glg.INFO)
 		_ = glg.Info("Logger initialized at INFO level.")
 	case "DEBUG":
+		fallthrough
 	default:
 		// 设置日志默认等级为DEBUG
 		glg.Get().SetMode(glg.STD).SetLevel(glg.DEBG)
