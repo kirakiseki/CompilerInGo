@@ -310,8 +310,8 @@ func (l *Lexer) scanOperator() (Token, error) {
 	tokenPos.End = l.Pos
 
 	// 判断是否为双字符操作符
-	if ch := l.peek(); (str.String() == "=" && ch == '=') || (str.String() == "<" && ch == '>') {
-		// 如果是==或<>，写入下一个字符
+	if ch := l.peek(); (str.String() == "=" && ch == '=') || (str.String() == "<" && ch == '>') || (str.String() == "<" && ch == '=') || (str.String() == ">" && ch == '=') {
+		// 如果是==/<>/<=/>=，写入下一个字符
 		str.WriteRune(ch)
 		// 更新结束位置
 		tokenPos.End = l.Pos
