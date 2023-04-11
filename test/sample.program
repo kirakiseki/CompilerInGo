@@ -1,16 +1,15 @@
-   "t1"
-   "t2"   "t4"
-   "t2"sf"t4"67
-"t3"
-"t3"89.8$34var var2 void
-   "liter\nal"<<<<<=====>>>>><><sf>0.98 98.124 -87 -87.34 -0.87 '' 'a' 's''j''s'<> '+'
-      s  "asdfa
-kj
+void var $ident ident1 123 -456 1.23 -4.56 -789.
+"stringLiteral"
+"multi line
+string"
 
-      sadf" or // comment
-/* comment */sf
+'c''h''a''r'
+{}();;;
+
+===<<<>>>>><>+-*/<=>=
+
+// single line comment
 /* multi line
-comment */iden1
-/* multi line*/iden2
+comment */
 
-{}   ()((())))))))
+
