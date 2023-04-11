@@ -3,13 +3,14 @@
    "t2"sf"t4"67
 "t3"
 "t3"89.8$34var var2 void
-   "liter\nal"<<<<<====>>>>><><sf>0.98 98.124 -87 -87.34 -0.87 '' 'a' 's''j''s'<> '+'
+   "liter\nal"<<<<<=====>>>>><><sf>0.98 98.124 -87 -87.34 -0.87 '' 'a' 's''j''s'<> '+'
       s  "asdfa
 kj
 
       sadf" or // comment
 /* comment */sf
 /* multi line
-comment */
+comment */iden1
+/* multi line*/iden2
 
-{}
+{}   ()((())))))))

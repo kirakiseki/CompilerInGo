@@ -34,5 +34,7 @@ func IfTokenError(token Token, err error) Token {
 		// 退出程序
 		glg.Fatal("Error while scanning Token")
 	}
+
+	// 没有错误则返回Token
 	return token
 }
