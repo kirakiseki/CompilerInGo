@@ -1,4 +1,4 @@
-void var $ident ident1 123 -456 1.23 -4.56 -789.
+void var $ident ident1 0123 -456 01.230000 -4.56 -789.
 "stringLiteral"
 "multi line
 string"
