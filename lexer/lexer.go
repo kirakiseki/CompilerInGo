@@ -6,7 +6,6 @@ import (
 	"github.com/kpango/glg"
 	"io"
 	"os"
-	"strconv"
 	"strings"
 	"unicode"
 )
@@ -27,14 +26,14 @@ func NewLexer(file string) *Lexer {
 	}
 
 	lexer.reader = strings.NewReader(string(lexer.File)) // 设置读取器
-	lexer.nextRune()                                     // 读取第一个字符
+	lexer.NextRune()                                     // 读取第一个字符
 
 	Lex = lexer // 设置全局Lex变量
 	return lexer
 }
 
-// nextRune 读取下一个字符
-func (l *Lexer) nextRune() rune {
+// NextRune 读取下一个字符
+func (l *Lexer) NextRune() rune {
 	ch, size, err := l.reader.ReadRune()
 
 	if errors.Is(err, io.EOF) { // EOF 文件末尾
@@ -88,7 +87,7 @@ func (l *Lexer) skipBlank() {
 		}
 
 		// 读取下一个字符
-		l.nextRune()
+		l.NextRune()
 	}
 }
 
@@ -109,7 +108,7 @@ func (l *Lexer) scanString() (Token, error) {
 		}
 
 		// 字符串未结束 继续读取
-		l.nextRune()
+		l.NextRune()
 		str.WriteRune(l.Pos.Ch)
 
 		// 更新结束位置
@@ -117,11 +116,11 @@ func (l *Lexer) scanString() (Token, error) {
 	}
 
 	// 读取结束双引号
-	l.nextRune()
+	l.NextRune()
 	// 记录结束位置
 	tokenPos.End = l.Pos
 	// 读取指针后移
-	l.nextRune()
+	l.NextRune()
 
 	return NewToken(str.String(), tokenPos, STRING_LITERAL), nil
 }
@@ -132,18 +131,18 @@ func (l *Lexer) scanChar() (Token, error) {
 	tokenPos := utils.PositionPair{Begin: l.Pos}
 
 	// 读取下一个字符
-	ch := l.nextRune()
+	ch := l.NextRune()
 	if ch == 0 {
 		// 未结束字符
 		return Token{}, errors.New("unterminated char literal")
 	}
 	if ch == '\'' {
 		// 空字符，读取指针后移
-		l.nextRune()
+		l.NextRune()
 		return NewToken("", tokenPos, CHAR_LITERAL), nil
 	}
 
-	if endCh := l.nextRune(); endCh != '\'' {
+	if endCh := l.NextRune(); endCh != '\'' {
 		// 判断是否单字符
 		if endCh == 0 || endCh == '\n' {
 			// 未结束字符
@@ -156,7 +155,7 @@ func (l *Lexer) scanChar() (Token, error) {
 	// 记录结束位置
 	tokenPos.End = l.Pos
 	// 读取指针后移
-	l.nextRune()
+	l.NextRune()
 
 	return NewToken(ch, tokenPos, CHAR_LITERAL), nil
 }
@@ -176,7 +175,7 @@ func (l *Lexer) scanIdentifier() (Token, error) {
 		// 更新结束位置
 		tokenPos.End = l.Pos
 		// 读取下一个字符
-		l.nextRune()
+		l.NextRune()
 	}
 
 	return NewToken(str.String(), tokenPos, IDENTIFIER), nil
@@ -198,7 +197,7 @@ func (l *Lexer) scanNumber() (Token, error) {
 		// 更新结束位置
 		tokenPos.End = l.Pos
 		// 读取下一个字符
-		l.nextRune()
+		l.NextRune()
 	}
 
 	// 如果为数字或小数点，继续读取
@@ -217,16 +216,17 @@ func (l *Lexer) scanNumber() (Token, error) {
 		// 更新结束位置
 		tokenPos.End = l.Pos
 		// 读取下一个字符
-		l.nextRune()
+		l.NextRune()
 	}
 
 	if pointCount == 0 {
 		// 如果为整数
-		num := utils.MustValue(strconv.ParseInt(str.String(), 10, 64))
+		num := utils.MustValue(utils.ParseInt(str.String()))
 		return NewToken(num, tokenPos, INTEGER_LITERAL), nil
 	} else {
 		// 如果为小数
-		num := utils.MustValue(strconv.ParseFloat(str.String(), 64))
+		//num := utils.MustValue(strconv.ParseFloat(str.String(), 64))
+		num := utils.MustValue(utils.ParseFloat(str.String()))
 		return NewToken(num, tokenPos, DECIMAL_LITERAL), nil
 	}
 }
@@ -247,11 +247,11 @@ func (l *Lexer) scanComment() (Token, error) {
 	switch l.peek() {
 	case '/':
 		// 单行注释
-		l.nextRune()
+		l.NextRune()
 		commentType = SINGLELINE_COMMENT_LITERAL
 
 		for {
-			ch := l.nextRune()
+			ch := l.NextRune()
 			// 扫描到换行或EOF结束
 			if ch == 0 || ch == '\n' {
 				break
@@ -265,11 +265,11 @@ func (l *Lexer) scanComment() (Token, error) {
 		result = str.String()
 	case '*':
 		// 多行注释
-		l.nextRune()
+		l.NextRune()
 		commentType = MULTILINE_COMMENT_LITERAL
 
 		for {
-			ch := l.nextRune()
+			ch := l.NextRune()
 			// 未配对的注释
 			if ch == 0 {
 				return Token{}, errors.New("unterminated comment")
@@ -282,7 +282,7 @@ func (l *Lexer) scanComment() (Token, error) {
 			// 与结束的*/配对
 			if ch == '*' && l.peek() == '/' {
 				// 读取指针后移到/
-				l.nextRune()
+				l.NextRune()
 				// 更新结束位置
 				tokenPos.End = l.Pos
 				break
@@ -292,7 +292,7 @@ func (l *Lexer) scanComment() (Token, error) {
 	}
 
 	// 读取指针右移
-	l.nextRune()
+	l.NextRune()
 
 	return NewToken(result, tokenPos, commentType), nil
 }
@@ -316,11 +316,11 @@ func (l *Lexer) scanOperator() (Token, error) {
 		// 更新结束位置
 		tokenPos.End = l.Pos
 		// 读取指针右移到双字符操作符的第二个字符
-		l.nextRune()
+		l.NextRune()
 	}
 
 	// 读取指针后移
-	l.nextRune()
+	l.NextRune()
 
 	// 判断操作符类型
 	switch str.String() {
@@ -363,7 +363,7 @@ func (l *Lexer) scanDelim() (Token, error) {
 	ch := l.Pos.Ch
 
 	// 读取指针后移
-	l.nextRune()
+	l.NextRune()
 
 	// 判断分隔符类型
 	switch ch {
