@@ -31,10 +31,28 @@ func IfTokenError(token Token, err error) Token {
 		// 显示错误位置指示器
 		_ = glg.Fail(str.String())
 
-		// 退出程序
-		glg.Fatal("Error while scanning Token")
+		// 报错结束
+		_ = glg.Fail("Error while scanning Token")
+
+		return SkipUntilValid()
 	}
 
 	// 没有错误则返回Token
 	return token
+}
+
+func SkipUntilValid() Token {
+	// 获取lexer中状态
+	lex := Lex
+
+	for {
+		ch := lex.NextRune()
+		if ch == 0 {
+			return NewToken("EOF_LITERAL", utils.PositionPair{Begin: lex.Pos, End: lex.Pos}, EOF_LITERAL)
+		}
+		token, err := lex.ScanToken()
+		if err == nil {
+			return token
+		}
+	}
 }
