@@ -31,9 +31,6 @@ func IfTokenError(token Token, err error) Token {
 		// 显示错误位置指示器
 		_ = glg.Fail(str.String())
 
-		// 报错结束
-		_ = glg.Fail("Error while scanning Token")
-
 		return SkipUntilValid()
 	}
 

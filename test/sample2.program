@@ -1,0 +1,15 @@
+var integ int
+var decim float
+var str string
+
+/* Judge whether integ is positive or negative */
+begin
+    integ = 5
+    decim = 3.14
+
+    if integ > 0 then // if integ is greater than 0
+        str = "positive"
+    else
+        str = "negative"
+    end
+end

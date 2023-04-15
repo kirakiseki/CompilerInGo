@@ -11,6 +11,8 @@ func InitLogger(level string) {
 		// 设置日志等级为INFO
 		glg.Get().SetMode(glg.STD).SetLevel(glg.INFO)
 		_ = glg.Info("Logger initialized at INFO level.")
+	case "CLOSE":
+		glg.Get().SetMode(glg.NONE)
 	case "DEBUG":
 		fallthrough
 	default:

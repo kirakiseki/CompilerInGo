@@ -1,4 +1,4 @@
-package test
+package lexer
 
 import (
 	"CompilerInGo/utils"
