@@ -3,6 +3,7 @@ package main
 import (
 	"CompilerInGo/lexer"
 	"CompilerInGo/utils"
+	"flag"
 	"github.com/kpango/glg"
 	"os"
 	"runtime"
@@ -11,14 +12,15 @@ import (
 )
 
 func main() {
-
-	// 设置运行模式
-	mode := "DEBUG"
+	// 解析命令行参数
+	filepath := flag.String("f", "./test.program", "input source program")
+	mode := flag.String("m", "DEBUG", "logger mode (DEBUG, INFO, CLOSE)")
+	flag.Parse()
 
 	// 设置CPU Profiling
-	if mode == "DEBUG" {
+	if *mode == "DEBUG" {
 		// 创建CPU Profiling文件
-		cpuProf, err := os.Create("./test/benchmark/cpu.prof")
+		cpuProf, err := os.Create("./cpu.prof")
 		if err != nil {
 			glg.Fatalln(err)
 		}
@@ -26,17 +28,16 @@ func main() {
 		defer cpuProf.Close()
 
 		// 使用pprof进行CPU Profiling
-		runtime.SetCPUProfileRate(10000)
+		runtime.SetCPUProfileRate(3000)
 		_ = pprof.StartCPUProfile(cpuProf)
 		defer pprof.StopCPUProfile()
 	}
 
 	// 初始化logger
-	//utils.InitLogger(mode)
-	utils.InitLogger("DEBUG")
+	utils.InitLogger(*mode)
 
 	// 初始化lexer
-	lex := lexer.NewLexer("test/fail.program")
+	lex := lexer.NewLexer(*filepath)
 	// 初始化token池
 	tokenPool := lexer.NewTokenPool()
 

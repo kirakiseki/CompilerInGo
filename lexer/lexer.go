@@ -225,7 +225,6 @@ func (l *Lexer) scanNumber() (Token, error) {
 		return NewToken(num, tokenPos, INTEGER_LITERAL), nil
 	} else {
 		// 如果为小数
-		//num := utils.MustValue(strconv.ParseFloat(str.String(), 64))
 		num := utils.MustValue(utils.ParseFloat(str.String()))
 		return NewToken(num, tokenPos, DECIMAL_LITERAL), nil
 	}
