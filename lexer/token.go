@@ -2,6 +2,7 @@ package lexer
 
 import (
 	"CompilerInGo/utils"
+	"errors"
 	"fmt"
 	"github.com/kpango/glg"
 )
@@ -325,4 +326,16 @@ func (pl *TokenPool) Last() Token {
 		return Token{}
 	}
 	return pl.Pool[pl.Len()-1]
+}
+
+func (pl *TokenPool) Pop() func() (Token, error) {
+	index := 0
+	return func() (Token, error) {
+		if index >= pl.Len() {
+			return Token{}, errors.New("TokenPool Pop Out of range")
+		}
+		token := pl.Pool[index]
+		index++
+		return token, nil
+	}
 }

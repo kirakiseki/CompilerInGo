@@ -16,7 +16,8 @@ type Lexer struct {
 	File   []byte         // 文件内容
 }
 
-var Lex *Lexer // 全局Lex变量
+var Lex *Lexer      // 全局Lex变量
+var Pool *TokenPool // 全局TokenPool变量
 
 // NewLexer 创建一个新的词法分析器
 func NewLexer(file string) *Lexer {
