@@ -65,8 +65,12 @@ func (ts *TokenStream) AcceptTokenByType(exceptedType ...lexer.TokenType) (lexer
 			return token, nil
 		}
 	}
+	var str string
+	for _, t := range exceptedType {
+		str += lexer.TokenTypeString[t] + " "
+	}
 	ts.UnreadToken()
-	return token, utils.NewErrorf("Expect token type %v, but got %v", exceptedType, token)
+	return token, utils.NewErrorf("Expect token type %s, but got \"%s\", at %d:%d to %d:%d", str, token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 }
 
 // AcceptTokenByFunc 读取一个满足条件的Token
@@ -77,15 +81,19 @@ func (ts *TokenStream) AcceptTokenByFunc(f func(token lexer.Token) bool) (lexer.
 		return token, nil
 	}
 	ts.UnreadToken()
-	return token, utils.NewErrorf("Token %v does not meet the expectation", token)
+	return token, utils.NewErrorf("Token \"%s\" does not meet the expectation, at %d:%d to %d:%d", token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 }
 
 // MustAcceptTokenByType 必须满足指定类型的Token
 // 如果读取到的Token不是指定类型，那么直接退出程序
 func (ts *TokenStream) MustAcceptTokenByType(exceptedType ...lexer.TokenType) lexer.Token {
 	token, err := ts.AcceptTokenByType(exceptedType...)
+	var str string
+	for _, t := range exceptedType {
+		str += lexer.TokenTypeString[t] + " "
+	}
 	if err != nil {
-		glg.Fatalf("Expect token type %v, but got %#v", exceptedType, token)
+		glg.Fatalf("Expect token type %s, but got \"%s\", at %d:%d to %d:%d", str, token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 	}
 	return token
 }
@@ -95,7 +103,7 @@ func (ts *TokenStream) MustAcceptTokenByType(exceptedType ...lexer.TokenType) le
 func (ts *TokenStream) MustAcceptTokenByFunc(f func(token lexer.Token) bool) lexer.Token {
 	token, err := ts.AcceptTokenByFunc(f)
 	if err != nil {
-		glg.Fatalf("Token %v does not meet the expectation", token)
+		glg.Fatalf("Token \"%s\" does not meet the expectation, at %d:%d to %d:%d", token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 	}
 	return token
 }
