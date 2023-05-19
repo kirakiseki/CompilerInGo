@@ -5,6 +5,9 @@ import (
 	"encoding/json"
 )
 
+// 为了方便输出AST，我们需要为AST中的每个结构体实现MarshalJSON()方法
+// 输出指定内容，略去位置，null值，以及一些不必要的信息
+
 type typeIDPair struct {
 	Type Type
 	ID   ID

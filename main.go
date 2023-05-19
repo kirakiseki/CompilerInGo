@@ -76,18 +76,30 @@ func main() {
 	pser := parser.NewParser()
 	_ = glg.Info("Parser initialized")
 
+	// Parser计时开始
 	startTime = time.Now()
+
+	// 开始parse
 	program, err := pser.Parse()
 	if err != nil {
 		glg.Fatal(err)
 	}
+
+	// Parser计时结束
 	elapsedTime = time.Since(startTime)
 
+	// 输出AST
+	// 将AST转换为JSON格式
 	marshaled, _ := json.Marshal(program)
+	// 在Debug模式下输出原始JSON
 	_ = glg.Debug("Raw JSON:", string(marshaled))
+
+	// 在Info模式下输出格式化后的JSON
 	var prettyJSON bytes.Buffer
 	_ = json.Indent(&prettyJSON, marshaled, "", "....")
 	_ = glg.Info("Parser Result:")
 	_ = glg.Info("AST in JSON format:\n" + prettyJSON.String())
+
+	// 显示Parser运行时间
 	_ = glg.Info("Parsing finished in ", elapsedTime)
 }
