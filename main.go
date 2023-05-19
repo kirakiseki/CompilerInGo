@@ -88,8 +88,7 @@ func main() {
 	// Parser计时结束
 	elapsedTime = time.Since(startTime)
 
-	// 输出AST
-	// 将AST转换为JSON格式
+	// 将AST转换为JSON
 	marshaled, _ := json.Marshal(program)
 	// 在Debug模式下输出原始JSON
 	_ = glg.Debug("Raw JSON:", string(marshaled))
