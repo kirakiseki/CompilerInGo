@@ -1,15 +1,9999 @@
-int max(int a,int b){
-    if (a>b){
-        return a;
-    }
-    else{
-        return b;
-    }
+int func(int a,int b){
+    return a+b;
 }
 
 int main(){
     int m,n;
     a=1;
     b=2;
-    call max(a,b);
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+
+int func(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call func(a,b);
+    return 0;
+}
+int func(int a,int b){
+    return a+b;
 }

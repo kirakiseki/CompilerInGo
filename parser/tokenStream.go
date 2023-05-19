@@ -4,6 +4,7 @@ import (
 	"CompilerInGo/lexer"
 	"CompilerInGo/utils"
 	"github.com/kpango/glg"
+	"runtime/debug"
 )
 
 // TokenStream Token流
@@ -93,6 +94,7 @@ func (ts *TokenStream) MustAcceptTokenByType(exceptedType ...lexer.TokenType) le
 		str += lexer.TokenTypeString[t] + " "
 	}
 	if err != nil {
+		debug.PrintStack()
 		glg.Fatalf("Expect token type %s, but got \"%s\", at %d:%d to %d:%d", str, token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 	}
 	return token
@@ -103,6 +105,7 @@ func (ts *TokenStream) MustAcceptTokenByType(exceptedType ...lexer.TokenType) le
 func (ts *TokenStream) MustAcceptTokenByFunc(f func(token lexer.Token) bool) lexer.Token {
 	token, err := ts.AcceptTokenByFunc(f)
 	if err != nil {
+		debug.PrintStack()
 		glg.Fatalf("Token \"%s\" does not meet the expectation, at %d:%d to %d:%d", token.Literal, token.Pos.Begin.Row, token.Pos.Begin.Col, token.Pos.End.Row, token.Pos.End.Col)
 	}
 	return token
