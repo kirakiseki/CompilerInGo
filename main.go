@@ -4,6 +4,8 @@ import (
 	"CompilerInGo/lexer"
 	"CompilerInGo/parser"
 	"CompilerInGo/utils"
+	"bytes"
+	"encoding/json"
 	"flag"
 	"github.com/kpango/glg"
 	"os"
@@ -50,11 +52,11 @@ func main() {
 	// 读取第一个Token
 	// IfTokenError 检查Token是否出错，若出错则输出错误信息并退出程序
 	token := lexer.IfTokenError(lex.ScanToken())
-	lexer.Pool.Add(token)
+	lexer.Pool.PushBack(token)
 	// 若未读到EOF则继续读取
 	for lexer.Pool.Last().Category != lexer.EOF {
 		token := lexer.IfTokenError(lex.ScanToken())
-		lexer.Pool.Add(token)
+		lexer.Pool.PushBack(token)
 	}
 
 	// Lexer计时结束
@@ -71,9 +73,21 @@ func main() {
 	_ = glg.Info("Lexing finished in ", elapsedTime)
 
 	// 初始化parser
-	parse := parser.NewParser()
-	for i := 0; i < 30; i++ {
-		parse.Next()
+	pser := parser.NewParser()
+	_ = glg.Info("Parser initialized")
+
+	startTime = time.Now()
+	program, err := pser.Parse()
+	if err != nil {
+		glg.Fatal(err)
 	}
-	_ = glg.Debugf("%v", parse.Next)
+	elapsedTime = time.Since(startTime)
+
+	marshaled, _ := json.Marshal(program)
+	_ = glg.Debug("Raw JSON:", string(marshaled))
+	var prettyJSON bytes.Buffer
+	_ = json.Indent(&prettyJSON, marshaled, "", "....")
+	_ = glg.Info("Parser Result:")
+	_ = glg.Info("AST in JSON format:\n" + prettyJSON.String())
+	_ = glg.Info("Parsing finished in ", elapsedTime)
 }

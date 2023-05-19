@@ -379,6 +379,8 @@ func (l *Lexer) scanDelim() (Token, error) {
 		return NewToken(";", tokenPos, SEMICOLON), nil
 	case ' ':
 		return NewToken(" ", tokenPos, SPACE), nil
+	case ',':
+		return NewToken(",", tokenPos, COMMA), nil
 	}
 
 	// 未匹配到分隔符
@@ -417,7 +419,7 @@ func (l *Lexer) ScanToken() (Token, error) {
 		if IsKeyword(token.Literal.(string)) {
 			// 是关键字
 			// 寻找关键字对应的类型
-			for k, v := range tokenType {
+			for k, v := range TokenTypeString {
 				if v == token.Literal.(string) {
 					token.Type = k
 				}

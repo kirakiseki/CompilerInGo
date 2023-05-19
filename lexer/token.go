@@ -2,7 +2,7 @@ package lexer
 
 import (
 	"CompilerInGo/utils"
-	"errors"
+	"encoding/json"
 	"fmt"
 	"github.com/kpango/glg"
 )
@@ -19,7 +19,7 @@ type Token struct {
 	Category TokenCategory      // 分类
 	Type     TokenType          // 类型
 	Literal  any                // 字面量
-	Pos      utils.PositionPair // 位置
+	Pos      utils.PositionPair `json:"-"` // 位置
 }
 
 // TokenCategory
@@ -39,85 +39,92 @@ const (
 // TokenType
 // 关键字
 const (
-	VOID   = 10 + iota //10 void
-	VAR                //11 var
-	INT                //12 int
-	FLOAT              //13 float
-	STRING             //14 string
-	BEGIN              //15 begin
-	END                //16 end
-	IF                 //17 if
-	THEN               //18 then
-	ELSE               //19 else
-	WHILE              //20 while
-	DO                 //21 do
-	CALL               //22 call
-	READ               //23 read
-	WRITE              //24 write
-	AND                //25 and
-	OR                 //26 or
+	VOID     = 10 + iota //10 void
+	VAR                  //11 var
+	INT                  //12 int
+	FLOAT                //13 float
+	STRING               //14 string
+	BEGIN                //15 begin
+	END                  //16 end
+	IF                   //17 if
+	THEN                 //18 then
+	ELSE                 //19 else
+	WHILE                //20 while
+	DO                   //21 do
+	CALL                 //22 call
+	READ                 //23 read
+	WRITE                //24 write
+	AND                  //25 and
+	OR                   //26 or
+	RETURN               //27 return
+	CONTINUE             //28 continue
+	BREAK                //29 break
 )
 
 // 分隔符
 const (
-	LBRACE    = 27 + iota //27 {
-	RBRACE                //28 }
-	LPAREN                //29 (
-	RPAREN                //30 )
-	SEMICOLON             //31 ;
-	SPACE                 //32 空格
+	LBRACE    = 30 + iota //30 {
+	RBRACE                //31 }
+	LPAREN                //32 (
+	RPAREN                //33 )
+	SEMICOLON             //34 ;
+	SPACE                 //35 空格
+	COMMA                 //36 ,
 )
 
 // 运算符
 const (
-	EQUAL        = 33 + iota //33 ==
-	ASSIGN                   //34 =
-	LESS                     //35 <
-	LESSEQUAL                //36 <=
-	GREATER                  //37 >
-	GREATEREQUAL             //38 >=
-	DIAMOND                  //39 <>
-	PLUS                     //40 +
-	MINUS                    //41 -
-	TIMES                    //42 *
-	DIVIDE                   //43 /
+	EQUAL        = 37 + iota //37 ==
+	ASSIGN                   //38 =
+	LESS                     //39 <
+	LESSEQUAL                //40 <=
+	GREATER                  //41 >
+	GREATEREQUAL             //42 >=
+	DIAMOND                  //43 <>
+	PLUS                     //44 +
+	MINUS                    //45 -
+	TIMES                    //46 *
+	DIVIDE                   //47 /
 )
 
 // 字面量
 const (
-	INTEGER_LITERAL            = 44 + iota //44 整数字面量
-	DECIMAL_LITERAL                        //45 小数字面量
-	STRING_LITERAL                         //46 字符串字面量
-	CHAR_LITERAL                           //47 字符字面量
-	EOF_LITERAL                            //48 EOF字面量
-	SINGLELINE_COMMENT_LITERAL             //49 注释字面量
-	MULTILINE_COMMENT_LITERAL              //50 注释字面量
+	INTEGER_LITERAL            = 48 + iota //48 整数字面量
+	DECIMAL_LITERAL                        //49 小数字面量
+	STRING_LITERAL                         //50 字符串字面量
+	CHAR_LITERAL                           //51 字符字面量
+	EOF_LITERAL                            //52 EOF字面量
+	SINGLELINE_COMMENT_LITERAL             //53 注释字面量
+	MULTILINE_COMMENT_LITERAL              //54 注释字面量
 )
 
 // 标识符
 const (
-	IDENTIFIER = 51 + iota //51 标识符
+	IDENTIFIER = 55 + iota //55 标识符
 )
 
-// tokenType Token类型对应的字符串，输出时使用
-var tokenType = map[TokenType]string{
-	VOID:   "void",
-	VAR:    "var",
-	INT:    "int",
-	FLOAT:  "float",
-	STRING: "string",
-	BEGIN:  "begin",
-	END:    "end",
-	IF:     "if",
-	THEN:   "then",
-	ELSE:   "else",
-	WHILE:  "while",
-	DO:     "do",
-	CALL:   "call",
-	READ:   "read",
-	WRITE:  "write",
-	AND:    "and",
-	OR:     "or",
+// TokenTypeString Token类型对应的字符串，输出时使用
+var TokenTypeString = map[TokenType]string{
+	VOID:     "void",
+	VAR:      "var",
+	INT:      "int",
+	FLOAT:    "float",
+	STRING:   "string",
+	BEGIN:    "begin",
+	END:      "end",
+	IF:       "if",
+	THEN:     "then",
+	ELSE:     "else",
+	WHILE:    "while",
+	DO:       "do",
+	CALL:     "call",
+	READ:     "read",
+	WRITE:    "write",
+	AND:      "and",
+	OR:       "or",
+	RETURN:   "return",
+	CONTINUE: "continue",
+	BREAK:    "break",
 
 	LBRACE:    "LBRACE {",
 	RBRACE:    "RBRACE }",
@@ -125,6 +132,7 @@ var tokenType = map[TokenType]string{
 	RPAREN:    "RPAREN )",
 	SEMICOLON: "SEMICOLON ;",
 	SPACE:     "SPACE",
+	COMMA:     "COMMA ,",
 
 	EQUAL:        "EQUAL ==",
 	ASSIGN:       "ASSIGN =",
@@ -149,8 +157,8 @@ var tokenType = map[TokenType]string{
 	IDENTIFIER: "IDENTIFIER",
 }
 
-// tokenCategory Token类别对应的字符串，输出时使用
-var tokenCategory = map[TokenCategory]string{
+// TokenCategoryString Token类别对应的字符串，输出时使用
+var TokenCategoryString = map[TokenCategory]string{
 	EOF:     "EOF",
 	KEYWORD: "KEYWORD",
 	IDENT:   "IDENTIFIER",
@@ -166,7 +174,7 @@ var tokenCategory = map[TokenCategory]string{
 // IsKeyword 判断是否为关键字
 func IsKeyword(s string) bool {
 	switch s {
-	case "void", "var", "int", "float", "string", "begin", "end", "if", "then", "else", "while", "do", "call", "read", "write", "and", "or":
+	case "void", "var", "int", "float", "string", "begin", "end", "if", "then", "else", "while", "do", "call", "read", "write", "and", "or", "return", "continue", "break":
 		return true
 	default:
 		return false
@@ -176,7 +184,7 @@ func IsKeyword(s string) bool {
 // IsDelim 判断是否为分隔符
 func IsDelim(s string) bool {
 	switch s {
-	case "{", "}", "(", ")", ";", " ":
+	case "{", "}", "(", ")", ";", " ", ",":
 		return true
 	default:
 		return false
@@ -195,7 +203,7 @@ func IsOpera(s string) bool {
 
 // CategoryName 获取Token类别对应的字符串
 func (t *Token) CategoryName() string {
-	return tokenCategory[t.Category]
+	return TokenCategoryString[t.Category]
 }
 
 // String 获取Token的字符串表示
@@ -205,25 +213,25 @@ func (t *Token) String() string {
 		// 字符字面量
 		if t.Literal == "" {
 			// 空字符
-			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), tokenType[t.Type], "")
+			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), TokenTypeString[t.Type], "")
 		}
 		switch t.Literal.(type) {
 		case string:
 			// 字符非空且为字符串（经过转义）
-			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), tokenType[t.Type], t.Literal)
+			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), TokenTypeString[t.Type], t.Literal)
 		default:
 			// 字符非空且未经转义
-			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), tokenType[t.Type], string(t.Literal.(rune)))
+			return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), TokenTypeString[t.Type], string(t.Literal.(rune)))
 		}
 	default:
 		// 其他类型
-		return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), tokenType[t.Type], t.Literal)
+		return fmt.Sprintf("%3d:%3d to %3d:%3d %12s %27s (%v)", t.Pos.Begin.Row, t.Pos.Begin.Col, t.Pos.End.Row, t.Pos.End.Col, t.CategoryName(), TokenTypeString[t.Type], t.Literal)
 	}
 }
 
 // setType 设置Token的类型
 func (t *Token) setType() {
-	for k, v := range tokenType {
+	for k, v := range TokenTypeString {
 		if v == t.Literal {
 			t.Type = k
 		}
@@ -233,9 +241,9 @@ func (t *Token) setType() {
 // setCategory 设置Token的分类
 func (t *Token) setCategory() {
 	switch t.Type {
-	case VOID, VAR, INT, FLOAT, STRING, BEGIN, END, IF, THEN, ELSE, WHILE, DO, CALL, READ, WRITE, AND, OR:
+	case VOID, VAR, INT, FLOAT, STRING, BEGIN, END, IF, THEN, ELSE, WHILE, DO, CALL, READ, WRITE, AND, OR, CONTINUE, BREAK, RETURN:
 		t.Category = KEYWORD
-	case LBRACE, RBRACE, LPAREN, RPAREN, SEMICOLON, SPACE:
+	case LBRACE, RBRACE, LPAREN, RPAREN, SEMICOLON, SPACE, COMMA:
 		t.Category = DELIM
 	case EQUAL, ASSIGN, LESS, LESSEQUAL, GREATER, GREATEREQUAL, DIAMOND, PLUS, MINUS, TIMES, DIVIDE:
 		t.Category = OPERA
@@ -254,6 +262,18 @@ func (t *Token) setCategory() {
 	default:
 		t.Category = IDENT
 	}
+}
+
+func (t Token) MarshalJSON() ([]byte, error) {
+	return json.Marshal(struct {
+		Literal  any
+		Type     string
+		Category string
+	}{
+		Literal:  t.Literal,
+		Type:     TokenTypeString[t.Type],
+		Category: TokenCategoryString[t.Category],
+	})
 }
 
 // NewToken 创建Token
@@ -304,9 +324,14 @@ func NewTokenPool() *TokenPool {
 	}
 }
 
-// Add 向Token池中添加Token
-func (pl *TokenPool) Add(token Token) {
+// PushBack 向Token池后添加Token
+func (pl *TokenPool) PushBack(token Token) {
 	pl.Pool = append(pl.Pool, token)
+}
+
+// PushFront 向Token池钱添加Token
+func (pl *TokenPool) PushFront(token Token) {
+	pl.Pool = append([]Token{token}, pl.Pool...)
 }
 
 // Get 获取Token池中位置为index的Token
@@ -332,7 +357,7 @@ func (pl *TokenPool) Pop() func() (Token, error) {
 	index := 0
 	return func() (Token, error) {
 		if index >= pl.Len() {
-			return Token{}, errors.New("TokenPool Pop Out of range")
+			return Token{}, utils.NewError("TokenPool Pop Out of range")
 		}
 		token := pl.Pool[index]
 		index++

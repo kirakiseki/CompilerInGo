@@ -1,7 +1,15 @@
-var integ int
-var decim float
-var str string
+int max(int a,int b){
+    if (a>b){
+        return a;
+    }
+    else{
+        return b;
+    }
+}
 
-/* Judge whether integ is positive or negative */
-begin
-    integ = 5
+int main(){
+    int m,n;
+    a=1;
+    b=2;
+    call max(a,b);
+}
