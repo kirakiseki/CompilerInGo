@@ -1,6 +1,7 @@
 package main
 
 import (
+	"CompilerInGo/analyser"
 	"CompilerInGo/lexer"
 	"CompilerInGo/parser"
 	"CompilerInGo/utils"
@@ -39,6 +40,8 @@ func main() {
 	// 初始化logger
 	utils.InitLogger(*mode)
 
+	// ------------------- Lexer -------------------
+
 	// 初始化lexer
 	lex := lexer.NewLexer(*filepath)
 	_ = glg.Info("Lexer initialized")
@@ -72,6 +75,8 @@ func main() {
 	// 显示Lexer运行时间
 	_ = glg.Info("Lexing finished in ", elapsedTime)
 
+	// ------------------- Parser -------------------
+
 	// 初始化parser
 	pser := parser.NewParser()
 	_ = glg.Info("Parser initialized")
@@ -101,4 +106,13 @@ func main() {
 
 	// 显示Parser运行时间
 	_ = glg.Info("Parsing finished in ", elapsedTime)
+
+	// ------------------- Analyser -------------------
+
+	// 初始化Analyser
+	anly := analyser.NewAnalyser()
+	_ = glg.Info("Analyser initialized")
+
+	anly.Analyse(program)
+
 }
