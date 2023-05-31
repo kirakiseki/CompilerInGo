@@ -2,5 +2,11 @@ int a(int b,int c){
 }
 
 int main(){
-    call a(a,h);
+    call a(h,h);
+}
+
+int da(){
+    float ss,fhj;
+    ss=1;
+    return ss;
 }

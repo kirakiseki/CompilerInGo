@@ -113,6 +113,12 @@ func main() {
 	anly := analyser.NewAnalyser()
 	_ = glg.Info("Analyser initialized")
 
-	anly.Analyse(program)
+	errs := anly.Analyse(program)
+
+	if errs != 0 {
+		glg.Fatal("Analysing finished with ", errs, " errors")
+	} else {
+		_ = glg.Info("Analysing finished with no error")
+	}
 
 }

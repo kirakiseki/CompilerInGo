@@ -82,6 +82,10 @@ func (l *LocalVariableDeclaration) MarshalJSON() ([]byte, error) {
 		ID: l.ID,
 	})
 
+	if l.LocalVariableDeclarationRest == nil {
+		return json.Marshal(pair)
+	}
+
 	for _, elem := range *l.LocalVariableDeclarationRest {
 		pair = append(pair, struct {
 			ID ID

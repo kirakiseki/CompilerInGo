@@ -23,3 +23,15 @@ func (s *SymbolTable[T]) GetSymbol(name string) (T, bool) {
 	symbol, ok := s.Symbols[name]
 	return symbol, ok
 }
+
+func (s *SymbolTable[T]) RemoveSymbol(name string) {
+	if !s.HasSymbol(name) {
+		return
+	}
+
+	delete(s.Symbols, name)
+}
+
+func (s *SymbolTable[T]) Size() int {
+	return len(s.Symbols)
+}
