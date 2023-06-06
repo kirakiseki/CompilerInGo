@@ -3,6 +3,7 @@ package main
 import (
 	"CompilerInGo/analyser"
 	"CompilerInGo/lexer"
+	"CompilerInGo/mir"
 	"CompilerInGo/parser"
 	"CompilerInGo/utils"
 	"bytes"
@@ -113,12 +114,28 @@ func main() {
 	anly := analyser.NewAnalyser()
 	_ = glg.Info("Analyser initialized")
 
-	errs := anly.Analyse(program)
+	startTime = time.Now()
+
+	hirProgram, errs := anly.Analyse(program)
+
+	elapsedTime = time.Since(startTime)
+
+	for _, hi := range hirProgram.Methods {
+		_ = glg.Debugf("HIR Method: %#v", hi)
+	}
 
 	if errs != 0 {
 		glg.Fatal("Analysing finished with ", errs, " errors")
 	} else {
 		_ = glg.Info("Analysing finished with no error")
 	}
+
+	_ = glg.Info("Analysing finished in ", elapsedTime)
+
+	// ------------------- MIR Generator -------------------
+	gen := mir.NewMIRGenerator()
+	_ = glg.Info("MIR Generator initialized")
+
+	startTime = time.Now()
 
 }

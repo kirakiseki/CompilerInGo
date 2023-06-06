@@ -35,3 +35,11 @@ func (s *SymbolTable[T]) RemoveSymbol(name string) {
 func (s *SymbolTable[T]) Size() int {
 	return len(s.Symbols)
 }
+
+func (s *SymbolTable[T]) ToArray() []T {
+	array := make([]T, 0)
+	for _, symbol := range s.Symbols {
+		array = append(array, symbol)
+	}
+	return array
+}

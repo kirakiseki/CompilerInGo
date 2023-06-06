@@ -2,37 +2,59 @@ package ast
 
 // 为了方便输出AST，我们需要为AST中的每个结构体实现MarshalJSON()方法
 // 输出指定内容，略去位置，null值，以及一些不必要的信息
+const EMPTY = 0
+
+const (
+	PLUS = 1 + iota
+	MINUS
+	TIMES
+	DIVIDE
+)
+
+const (
+	LESS = 5 + iota
+	LESSEQUAL
+	GREATER
+	GREATEREQUAL
+	EQUAL
+	DIAMOND
+)
+
+const (
+	OR = 11 + iota
+	AND
+)
 
 type TypeIDSequence struct {
-	Seq []typeIDPair
+	Seq []TypeIDPair
 }
 
-func (paramList *ParamList) Integrate() (TypeIDSequence, error) {
+func (paramList *ParamList) Integrate() (*TypeIDSequence, error) {
 	if paramList.ParamList == nil {
-		return TypeIDSequence{}, nil
+		return nil, nil
 	}
 
-	tuple := make([]typeIDPair, 0)
-	tuple = append(tuple, typeIDPair{
+	tuple := make([]TypeIDPair, 0)
+	tuple = append(tuple, TypeIDPair{
 		Type: paramList.ParamList.Type,
 		ID:   paramList.ParamList.ID,
 	})
 
 	for _, elem := range *paramList.ParamList.ParamListRest {
-		tuple = append(tuple, typeIDPair{
+		tuple = append(tuple, TypeIDPair{
 			Type: elem.Type,
 			ID:   elem.ID,
 		})
 	}
 
-	return TypeIDSequence{
+	return &TypeIDSequence{
 		Seq: tuple,
 	}, nil
 }
 
 func (l *LocalVariableDeclaration) Integrate() (TypeIDSequence, error) {
-	tuple := make([]typeIDPair, 0)
-	tuple = append(tuple, typeIDPair{
+	tuple := make([]TypeIDPair, 0)
+	tuple = append(tuple, TypeIDPair{
 		Type: l.Type,
 		ID:   l.ID,
 	})
@@ -44,7 +66,7 @@ func (l *LocalVariableDeclaration) Integrate() (TypeIDSequence, error) {
 	}
 
 	for _, rest := range *l.LocalVariableDeclarationRest {
-		tuple = append(tuple, typeIDPair{
+		tuple = append(tuple, TypeIDPair{
 			Type: l.Type,
 			ID:   rest.ID,
 		})
@@ -68,11 +90,11 @@ func (e Exp) Integrate() []Term {
 	return []Term{e.Term, e.ExpRest.Term}
 }
 
-func (c ConditionalExp) Integrate() []RelationExp {
-	if c.ConditionalExpRest == nil {
-		return []RelationExp{c.RelationExp}
+func (conditionalExp ConditionalExp) Integrate() []RelationExp {
+	if conditionalExp.ConditionalExpRest == nil {
+		return []RelationExp{conditionalExp.RelationExp}
 	}
-	return []RelationExp{c.RelationExp, c.ConditionalExpRest.RelationExp}
+	return []RelationExp{conditionalExp.RelationExp, conditionalExp.ConditionalExpRest.RelationExp}
 }
 
 func (r RelationExp) Integrate() []CompExp {

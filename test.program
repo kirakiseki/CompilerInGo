@@ -2,10 +2,17 @@ int a(int b,int c){
 }
 
 int main(){
-    call a(h,h);
+    call a(7,2);
+    call main();
 }
 
 int da(){
+    float ss,fhj;
+    ss=1;
+    return ss;
+}
+
+int dasfa(){
     float ss,fhj;
     ss=1;
     return ss;

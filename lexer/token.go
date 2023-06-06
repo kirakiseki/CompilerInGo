@@ -30,7 +30,7 @@ const (
 	INTEGER        //3 整数
 	DECIMAL        //4 小数
 	STR            //5 字符串
-	CHAR           //6 字符
+	CHR            //6 字符
 	DELIM          //7 分隔符
 	OPERA          //8 运算符
 	COMMENT        //9 注释
@@ -39,31 +39,32 @@ const (
 // TokenType
 // 关键字
 const (
-	VOID     = 10 + iota //10 void
-	VAR                  //11 var
-	INT                  //12 int
-	FLOAT                //13 float
-	STRING               //14 string
-	BEGIN                //15 begin
-	END                  //16 end
-	IF                   //17 if
-	THEN                 //18 then
-	ELSE                 //19 else
-	WHILE                //20 while
-	DO                   //21 do
-	CALL                 //22 call
-	READ                 //23 read
-	WRITE                //24 write
-	AND                  //25 and
-	OR                   //26 or
-	RETURN               //27 return
-	CONTINUE             //28 continue
-	BREAK                //29 break
+	VOID   = 10 + iota //10 void
+	VAR                //11 var
+	INT                //12 int
+	FLOAT              //13 float
+	STRING             //14 string
+	CHAR
+	BEGIN    //15 begin
+	END      //16 end
+	IF       //17 if
+	THEN     //18 then
+	ELSE     //19 else
+	WHILE    //20 while
+	DO       //21 do
+	CALL     //22 call
+	READ     //23 read
+	WRITE    //24 write
+	AND      //25 and
+	OR       //26 or
+	RETURN   //27 return
+	CONTINUE //28 continue
+	BREAK    //29 break
 )
 
 // 分隔符
 const (
-	LBRACE    = 30 + iota //30 {
+	LBRACE    = 31 + iota //30 {
 	RBRACE                //31 }
 	LPAREN                //32 (
 	RPAREN                //33 )
@@ -74,7 +75,7 @@ const (
 
 // 运算符
 const (
-	EQUAL        = 37 + iota //37 ==
+	EQUAL        = 38 + iota //37 ==
 	ASSIGN                   //38 =
 	LESS                     //39 <
 	LESSEQUAL                //40 <=
@@ -89,7 +90,7 @@ const (
 
 // 字面量
 const (
-	INTEGER_LITERAL            = 48 + iota //48 整数字面量
+	INTEGER_LITERAL            = 49 + iota //48 整数字面量
 	DECIMAL_LITERAL                        //49 小数字面量
 	STRING_LITERAL                         //50 字符串字面量
 	CHAR_LITERAL                           //51 字符字面量
@@ -100,7 +101,7 @@ const (
 
 // 标识符
 const (
-	IDENTIFIER = 55 + iota //55 标识符
+	IDENTIFIER = 56 + iota //55 标识符
 )
 
 // TokenTypeString Token类型对应的字符串，输出时使用
@@ -110,6 +111,7 @@ var TokenTypeString = map[TokenType]string{
 	INT:      "int",
 	FLOAT:    "float",
 	STRING:   "string",
+	CHAR:     "char",
 	BEGIN:    "begin",
 	END:      "end",
 	IF:       "if",
@@ -165,7 +167,7 @@ var TokenCategoryString = map[TokenCategory]string{
 	INTEGER: "INTEGER",
 	DECIMAL: "DECIMAL",
 	STR:     "STRING",
-	CHAR:    "CHAR",
+	CHR:     "CHR",
 	DELIM:   "DELIMITER",
 	OPERA:   "OPERATOR",
 	COMMENT: "COMMENT",
@@ -174,7 +176,7 @@ var TokenCategoryString = map[TokenCategory]string{
 // IsKeyword 判断是否为关键字
 func IsKeyword(s string) bool {
 	switch s {
-	case "void", "var", "int", "float", "string", "begin", "end", "if", "then", "else", "while", "do", "call", "read", "write", "and", "or", "return", "continue", "break":
+	case "void", "var", "int", "float", "string", "char", "begin", "end", "if", "then", "else", "while", "do", "call", "read", "write", "and", "or", "return", "continue", "break":
 		return true
 	default:
 		return false
@@ -241,7 +243,7 @@ func (t *Token) setType() {
 // setCategory 设置Token的分类
 func (t *Token) setCategory() {
 	switch t.Type {
-	case VOID, VAR, INT, FLOAT, STRING, BEGIN, END, IF, THEN, ELSE, WHILE, DO, CALL, READ, WRITE, AND, OR, CONTINUE, BREAK, RETURN:
+	case VOID, VAR, INT, FLOAT, STRING, CHAR, BEGIN, END, IF, THEN, ELSE, WHILE, DO, CALL, READ, WRITE, AND, OR, CONTINUE, BREAK, RETURN:
 		t.Category = KEYWORD
 	case LBRACE, RBRACE, LPAREN, RPAREN, SEMICOLON, SPACE, COMMA:
 		t.Category = DELIM
@@ -254,7 +256,7 @@ func (t *Token) setCategory() {
 	case STRING_LITERAL:
 		t.Category = STR
 	case CHAR_LITERAL:
-		t.Category = CHAR
+		t.Category = CHR
 	case EOF_LITERAL:
 		t.Category = EOF
 	case SINGLELINE_COMMENT_LITERAL, MULTILINE_COMMENT_LITERAL:

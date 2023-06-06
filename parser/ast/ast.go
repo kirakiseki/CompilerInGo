@@ -313,12 +313,12 @@ type CmpOp lexer.Token
 
 // IsResultType 判断是否为返回值类型
 func IsResultType(token lexer.Token) bool {
-	return token.Type == lexer.INT || token.Type == lexer.FLOAT || token.Type == lexer.CHAR || token.Type == lexer.STRING || token.Type == lexer.VOID
+	return token.Type == lexer.INT || token.Type == lexer.FLOAT || token.Type == lexer.CHR || token.Type == lexer.STRING || token.Type == lexer.VOID
 }
 
 // IsType 判断是否为变量类型
 func IsType(token lexer.Token) bool {
-	return token.Type == lexer.INT || token.Type == lexer.FLOAT || token.Type == lexer.CHAR || token.Type == lexer.STRING
+	return token.Type == lexer.INT || token.Type == lexer.FLOAT || token.Type == lexer.CHR || token.Type == lexer.STRING
 }
 
 // IsID 判断是否为标识符
@@ -365,7 +365,7 @@ func NewMethod(resultType ResultType, idToken ID, lParen lexer.Token, paramList 
 // NewResultType 创建返回值类型
 func NewResultType(typeToken lexer.Token) (ResultType, error) {
 	switch typeToken.Type {
-	case lexer.INT, lexer.FLOAT, lexer.CHAR, lexer.STRING, lexer.VOID:
+	case lexer.INT, lexer.FLOAT, lexer.CHR, lexer.STRING, lexer.VOID:
 		// 检查参数是否合法
 		return ResultType(typeToken), nil
 	default:
@@ -463,7 +463,7 @@ func NewParamList(param ...any) (ParamList, error) {
 // NewType 创建类型
 func NewType(typeToken lexer.Token) (Type, error) {
 	switch typeToken.Type {
-	case lexer.INT, lexer.FLOAT, lexer.CHAR, lexer.STRING:
+	case lexer.INT, lexer.FLOAT, lexer.CHR, lexer.STRING:
 		return Type(typeToken), nil
 	default:
 		return Type{}, errors.New("Type: invalid type")
@@ -1001,4 +1001,8 @@ func NewCompExp(lExp Exp, cmpOp CmpOp, rExp Exp) (CompExp, error) {
 		CmpOp: cmpOp,
 		RExp:  rExp,
 	}, nil
+}
+
+func (m Method) GetMethodName() string {
+	return m.ID.Literal.(string)
 }

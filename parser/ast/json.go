@@ -8,7 +8,7 @@ import (
 // 为了方便输出AST，我们需要为AST中的每个结构体实现MarshalJSON()方法
 // 输出指定内容，略去位置，null值，以及一些不必要的信息
 
-type typeIDPair struct {
+type TypeIDPair struct {
 	Type Type
 	ID   ID
 }
@@ -54,14 +54,14 @@ func (paramList *ParamList) MarshalJSON() ([]byte, error) {
 		return json.Marshal([]struct{}{})
 	}
 
-	tuple := make([]typeIDPair, 0)
-	tuple = append(tuple, typeIDPair{
+	tuple := make([]TypeIDPair, 0)
+	tuple = append(tuple, TypeIDPair{
 		Type: paramList.ParamList.Type,
 		ID:   paramList.ParamList.ID,
 	})
 
 	for _, elem := range *paramList.ParamList.ParamListRest {
-		tuple = append(tuple, typeIDPair{
+		tuple = append(tuple, TypeIDPair{
 			Type: elem.Type,
 			ID:   elem.ID,
 		})
@@ -175,12 +175,12 @@ func (c CmpOp) MarshalJSON() ([]byte, error) {
 	})
 }
 
-func (c ConditionalExp) MarshalJSON() ([]byte, error) {
-	if c.ConditionalExpRest == nil {
+func (conditionalExp ConditionalExp) MarshalJSON() ([]byte, error) {
+	if conditionalExp.ConditionalExpRest == nil {
 		return json.Marshal(struct {
 			RelationExp RelationExp
 		}{
-			RelationExp: c.RelationExp,
+			RelationExp: conditionalExp.RelationExp,
 		})
 	}
 	return json.Marshal(struct {
@@ -188,9 +188,9 @@ func (c ConditionalExp) MarshalJSON() ([]byte, error) {
 		Or           lexer.Token
 		RRelationExp RelationExp
 	}{
-		LRelationExp: c.RelationExp,
-		Or:           c.ConditionalExpRest.Or,
-		RRelationExp: c.ConditionalExpRest.RelationExp,
+		LRelationExp: conditionalExp.RelationExp,
+		Or:           conditionalExp.ConditionalExpRest.Or,
+		RRelationExp: conditionalExp.ConditionalExpRest.RelationExp,
 	})
 }
 
