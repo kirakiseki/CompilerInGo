@@ -36,7 +36,7 @@ const (
 // TypeString 结点类型对应的字符串
 var TypeString = map[uint]string{
 	PROGRAM:                  "Program",
-	METHOD:                   "Method",
+	METHOD:                   "Methods",
 	RESULTTYPE:               "ResultType",
 	IDTYPE:                   "ID",
 	PARAMLIST:                "ParamList",
@@ -343,14 +343,14 @@ func NewProgram() (Program, error) {
 func NewMethod(resultType ResultType, idToken ID, lParen lexer.Token, paramList ParamList, rParen lexer.Token, block Block) (Method, error) {
 	// 检查参数是否合法
 	if idToken.Type != lexer.IDENTIFIER {
-		return Method{}, errors.New("Method: invalid idToken")
+		return Method{}, errors.New("Methods: invalid idToken")
 
 	}
 	if lParen.Type != lexer.LPAREN {
-		return Method{}, errors.New("Method: invalid lParen")
+		return Method{}, errors.New("Methods: invalid lParen")
 	}
 	if rParen.Type != lexer.RPAREN {
-		return Method{}, errors.New("Method: invalid rParen")
+		return Method{}, errors.New("Methods: invalid rParen")
 	}
 	return Method{
 		ResultType: resultType,

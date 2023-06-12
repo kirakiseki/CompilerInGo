@@ -60,11 +60,13 @@ func (paramList *ParamList) MarshalJSON() ([]byte, error) {
 		ID:   paramList.ParamList.ID,
 	})
 
-	for _, elem := range *paramList.ParamList.ParamListRest {
-		tuple = append(tuple, TypeIDPair{
-			Type: elem.Type,
-			ID:   elem.ID,
-		})
+	if paramList.ParamList.ParamListRest != nil {
+		for _, elem := range *paramList.ParamList.ParamListRest {
+			tuple = append(tuple, TypeIDPair{
+				Type: elem.Type,
+				ID:   elem.ID,
+			})
+		}
 	}
 
 	return json.Marshal(tuple)

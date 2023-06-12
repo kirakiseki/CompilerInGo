@@ -1,19 +1,16 @@
-int a(int b,int c){
+int avd(int c){
+    return 45;
+}
+
+int test(int a,int b){
+    a=a+b;
+    call avd(65);
+    return 33+56;
 }
 
 int main(){
-    call a(7,2);
-    call main();
-}
-
-int da(){
-    float ss,fhj;
-    ss=1;
-    return ss;
-}
-
-int dasfa(){
-    float ss,fhj;
-    ss=1;
-    return ss;
+    float ss,aa;
+    aa=45;
+    call test(56,ss+aa);
+    return aa+78;
 }

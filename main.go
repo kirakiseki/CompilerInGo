@@ -121,7 +121,7 @@ func main() {
 	elapsedTime = time.Since(startTime)
 
 	for _, hi := range hirProgram.Methods {
-		_ = glg.Debugf("HIR Method: %#v", hi)
+		_ = glg.Debugf("HIR Methods: %#v", hi)
 	}
 
 	if errs != 0 {
@@ -137,5 +137,14 @@ func main() {
 	_ = glg.Info("MIR Generator initialized")
 
 	startTime = time.Now()
+
+	mirProgram := gen.Generate(hirProgram)
+
+	elapsedTime = time.Since(startTime)
+
+	_ = mirProgram
+
+	gen.Print()
+	//_ = glg.Debugf("MIR Program: %#v", mirProgram)
 
 }

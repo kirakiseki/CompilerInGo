@@ -63,6 +63,7 @@ func (a *Analyser) Analyse(AST *ast.Program) (*hir.Program, int) {
 		errs++
 	}
 
+	a.unusedMethods.RemoveSymbol("main")
 	if a.unusedMethods.Size() > 0 {
 		for _, unusedMethod := range a.unusedMethods.Symbols {
 			_ = glg.Warnf("Analyser: unused method %s", unusedMethod)
@@ -211,6 +212,10 @@ func (a *Analyser) analyseCallStmt(statement ast.CallStatement) (hir.Statement, 
 	methodParams := targetMethod.Params
 	actParams, _ := statement.ActParamList.Integrate()
 
+	if targetMethod.Name == "main" {
+		return nil, errors.New("main method is not callable")
+	}
+
 	resExps := make([]hir.Exp, 0)
 	for _, exp := range actParams {
 		resExp, err := a.analyseExp(exp)
@@ -220,7 +225,7 @@ func (a *Analyser) analyseCallStmt(statement ast.CallStatement) (hir.Statement, 
 		resExps = append(resExps, *resExp)
 	}
 
-	if (methodParams == nil && len(actParams) != 0) || (methodParams != nil && len(actParams) == 0) || len(actParams) != len(methodParams) {
+	if (methodParams == nil && len(actParams) != 0) || (methodParams != nil && len(methodParams) != 0 && len(actParams) == 0) || len(actParams) != len(methodParams) {
 		return nil, errors.New(fmt.Sprintf("method %s is called with wrong number of parameters", statement.ID.Literal.(string)))
 	}
 

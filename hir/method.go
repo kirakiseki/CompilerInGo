@@ -25,3 +25,12 @@ func NewMethod(t ResultType, name string, params []*TypeIDPair, body *Statement)
 		Body:       body,
 	}
 }
+
+func (p Program) GetMethod(name string) *Method {
+	for _, method := range p.Methods {
+		if method.Name == name {
+			return &method
+		}
+	}
+	return nil
+}

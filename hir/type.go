@@ -1,5 +1,7 @@
 package hir
 
+import "fmt"
+
 type Literal interface {
 	lit()
 }
@@ -89,3 +91,20 @@ func (s String) GetVal() string {
 }
 
 func (s String) lit() {}
+
+func VarToStr(id int) string {
+	return fmt.Sprintf("_T%d", id)
+}
+
+func VarToStrWithSuffix(id int, suffix string) string {
+	return fmt.Sprintf("_T%d_%s", id, suffix)
+}
+
+func StrToVar(s string) int {
+	var id int
+	_, err := fmt.Sscanf(s, "_T%d", &id)
+	if err != nil {
+		return 0
+	}
+	return id
+}
