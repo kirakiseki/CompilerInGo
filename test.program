@@ -11,6 +11,12 @@ int test(int a,int b){
 int main(){
     float ss,aa;
     aa=45;
+    if(aa<44 and aa>32 or aa<47 and aa>35){
+        ss=22;
+    }
+    else{
+        ss=33;
+    }
     call test(56,ss+aa);
     return aa+78;
 }

@@ -7,8 +7,8 @@ import (
 
 func (g *MIRGenerator) generateStatement(stmt hir.Statement) []Statement {
 	switch stmt.(type) {
-	//case hir.ConditionalStatement:
-	//	return g.generateConditionalStatement(stmt.(hir.ConditionalStatement))
+	case hir.ConditionalStatement:
+		return g.generateConditionalStatement(stmt.(hir.ConditionalStatement))
 	//case hir.LoopStatement:
 	//	return g.generateLoopStatement(stmt.(hir.LoopStatement))
 	case hir.CallStatement:
@@ -66,9 +66,9 @@ func (g *MIRGenerator) generateReturnStatement(stmt hir.ReturnStatement) []State
 	g.Context = g.CtxStack.Top()
 	g.CtxStack.Pop()
 	if g.Context.MethodIn.Name != "main" {
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(hir.VarToStr(g.Methods[g.Context.MethodIn.Name].ReturnVar)), fmt.Sprintf("%s return value %s : goto %s", g.Context.MethodIn.Name, hir.VarToStr(expResultID), hir.VarToStr(g.Methods[g.Context.MethodIn.Name].ReturnVar))))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(hir.VarToStr(g.Methods[g.Context.MethodIn.Name].ReturnVar)), fmt.Sprintf("method %s return value %s : goto %s", g.Context.MethodIn.Name, hir.VarToStr(expResultID), hir.VarToStr(g.Methods[g.Context.MethodIn.Name].ReturnVar))))
 	} else {
-		stmtSeq = append(stmtSeq, *NewStatement(STOP, StrParam("_"), StrParam("_"), StrParam(hir.VarToStr(expResultID)), fmt.Sprintf("main return value: %s", hir.VarToStr(expResultID))))
+		stmtSeq = append(stmtSeq, *NewStatement(STOP, StrParam("_"), StrParam("_"), StrParam(hir.VarToStr(expResultID)), fmt.Sprintf("main return value: %s : STOP", hir.VarToStr(expResultID))))
 	}
 	return stmtSeq
 }
@@ -104,7 +104,30 @@ func (g *MIRGenerator) generateCallStatement(stmt hir.CallStatement) []Statement
 	}
 
 	stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(method.ReturnVar)), StrParam("_T_HERE_TO_JMP+1"), StrParam(hir.VarToStr(method.ReturnVar)), fmt.Sprintf("call returnTo: %s", hir.VarToStr(method.ReturnVar))))
-	stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_%s", stmt.Method)), fmt.Sprintf("call method: %s", stmt.Method)))
+	stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_METHOD_%s", stmt.Method)), fmt.Sprintf("call method: %s", stmt.Method)))
 
+	return stmtSeq
+}
+
+func (g *MIRGenerator) generateConditionalStatement(stmt hir.ConditionalStatement) []Statement {
+	var stmtSeq []Statement
+
+	expStmtSeq, expResultID := g.generateConditionalExp(stmt.Condition)
+	stmtSeq = append(stmtSeq, expStmtSeq...)
+	expFalseStmt := *NewStatement(JZERO, StrParam(hir.VarToStr(expResultID)), StrParam("_"), StrParam("_"), "_")
+
+	trueSeq := g.generateStatement(*stmt.IfBody)
+	expFalseStmt.Res = StrParam(fmt.Sprintf("_T_JMP_REF_%d", len(trueSeq)+2))
+	expFalseStmt.Comment = fmt.Sprintf("if false: goto here+%d", len(trueSeq)+2)
+	stmtSeq = append(stmtSeq, expFalseStmt)
+
+	trueSeq[0].Comment = fmt.Sprintf("true block: %s", trueSeq[0].Comment)
+	stmtSeq = append(stmtSeq, trueSeq...)
+	if stmt.ElseBody != nil {
+		falseSeq := g.generateStatement(*stmt.ElseBody)
+		falseSeq[0].Comment = fmt.Sprintf("false block: %s", falseSeq[0].Comment)
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", len(falseSeq)+1)), fmt.Sprintf("goto here+%d", len(falseSeq)+1)))
+		stmtSeq = append(stmtSeq, falseSeq...)
+	}
 	return stmtSeq
 }

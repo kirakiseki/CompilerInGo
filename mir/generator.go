@@ -76,17 +76,29 @@ func (g *MIRGenerator) Generate(program *hir.Program) *Program {
 			g.Program.StmtSeq[idx].Res = IntParam(idx + 2)
 		}
 
+		var ref int
+		if cnt, err := fmt.Sscanf(arg1.Str(), "_T_JMP_REF_%d", &ref); err == nil && cnt == 1 {
+			g.Program.StmtSeq[idx].Arg1 = IntParam(idx + ref)
+		}
+		if cnt, err := fmt.Sscanf(arg2.Str(), "_T_JMP_REF_%d", &ref); err == nil && cnt == 1 {
+			g.Program.StmtSeq[idx].Arg2 = IntParam(idx + ref)
+		}
+		if cnt, err := fmt.Sscanf(res.Str(), "_T_JMP_REF_%d", &ref); err == nil && cnt == 1 {
+			g.Program.StmtSeq[idx].Res = IntParam(idx + ref)
+		}
+
 		var method string
-		if cnt, err := fmt.Sscanf(arg1.Str(), "_T_JMP_%s", &method); err == nil && cnt == 1 {
+		if cnt, err := fmt.Sscanf(arg1.Str(), "_T_JMP_METHOD_%s", &method); err == nil && cnt == 1 {
 			g.Program.StmtSeq[idx].Arg1 = IntParam(g.Methods[method].Pos + offset)
 		}
-		if cnt, err := fmt.Sscanf(arg2.Str(), "_T_JMP_%s", &method); err == nil && cnt == 1 {
+		if cnt, err := fmt.Sscanf(arg2.Str(), "_T_JMP_METHOD_%s", &method); err == nil && cnt == 1 {
 			g.Program.StmtSeq[idx].Arg2 = IntParam(g.Methods[method].Pos + offset)
 		}
-		if cnt, err := fmt.Sscanf(res.Str(), "_T_JMP_%s", &method); err == nil && cnt == 1 {
+		if cnt, err := fmt.Sscanf(res.Str(), "_T_JMP_METHOD_%s", &method); err == nil && cnt == 1 {
 			g.Program.StmtSeq[idx].Res = IntParam(g.Methods[method].Pos + offset)
 		}
 	}
+	_ = offset
 
 	return g.Program
 }

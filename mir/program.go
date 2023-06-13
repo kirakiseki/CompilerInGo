@@ -19,6 +19,8 @@ const (
 	JGREATEQUAL
 	JLESS
 	JLESSEQUAL
+	JZERO
+	JNZERO
 	STOP
 )
 
@@ -36,6 +38,8 @@ var OpString = map[int]string{
 	JGREATEQUAL: "j>=",
 	JLESS:       "j<",
 	JLESSEQUAL:  "j<=",
+	JZERO:       "j0",
+	JNZERO:      "j!0",
 	STOP:        "STOP",
 }
 
