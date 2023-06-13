@@ -969,7 +969,7 @@ func NewRelationExp(lExp CompExp, And *lexer.Token, rExp *CompExp) (RelationExp,
 		return RelationExp{}, errors.New("NewRelationExp: expected And and rExp to be both nil or both not nil")
 	}
 	// 检查and
-	if And != nil && And.Type != lexer.OR {
+	if And != nil && And.Type != lexer.AND {
 		return RelationExp{}, errors.New("NewRelationExp: invalid And token")
 	}
 	// 如果and和右表达式都不存在，则返回左表达式
