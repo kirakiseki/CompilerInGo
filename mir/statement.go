@@ -9,18 +9,18 @@ func (g *MIRGenerator) generateStatement(stmt hir.Statement) []Statement {
 	switch stmt.(type) {
 	case hir.ConditionalStatement:
 		return g.generateConditionalStatement(stmt.(hir.ConditionalStatement))
-	//case hir.LoopStatement:
-	//	return g.generateLoopStatement(stmt.(hir.LoopStatement))
+	case hir.LoopStatement:
+		return g.generateLoopStatement(stmt.(hir.LoopStatement))
 	case hir.CallStatement:
 		return g.generateCallStatement(stmt.(hir.CallStatement))
 	case hir.AssignStatement:
 		return g.generateAssignStatement(stmt.(hir.AssignStatement))
 	case hir.ReturnStatement:
 		return g.generateReturnStatement(stmt.(hir.ReturnStatement))
-	//case hir.BreakStatement:
-	//	return g.generateBreakStatement(stmt.(hir.BreakStatement))
-	//case hir.ContinueStatement:
-	//	return g.generateContinueStatement(stmt.(hir.ContinueStatement))
+	case hir.BreakStatement:
+		return g.generateBreakStatement(stmt.(hir.BreakStatement))
+	case hir.ContinueStatement:
+		return g.generateContinueStatement(stmt.(hir.ContinueStatement))
 	case hir.LocalVariableDeclaration:
 		return g.generateLocalVariableDeclaration(stmt.(hir.LocalVariableDeclaration))
 	case hir.Block:
@@ -76,7 +76,9 @@ func (g *MIRGenerator) generateReturnStatement(stmt hir.ReturnStatement) []State
 func (g *MIRGenerator) generateCallStatement(stmt hir.CallStatement) []Statement {
 	var stmtSeq []Statement
 	g.Context = Context{
-		MethodIn: MethodInfo{Name: stmt.Method},
+		MethodIn:      MethodInfo{Name: stmt.Method},
+		LoopCondLabel: -1,
+		LoopEndLabel:  -1,
 	}
 	g.CtxStack.Push(g.Context)
 
@@ -118,7 +120,7 @@ func (g *MIRGenerator) generateConditionalStatement(stmt hir.ConditionalStatemen
 
 	trueSeq := g.generateStatement(*stmt.IfBody)
 	expFalseStmt.Res = StrParam(fmt.Sprintf("_T_JMP_REF_%d", len(trueSeq)+2))
-	expFalseStmt.Comment = fmt.Sprintf("if false: goto here+%d", len(trueSeq)+2)
+	expFalseStmt.Comment = fmt.Sprintf("if condition false: goto here+%d", len(trueSeq)+2)
 	stmtSeq = append(stmtSeq, expFalseStmt)
 
 	trueSeq[0].Comment = fmt.Sprintf("true block: %s", trueSeq[0].Comment)
@@ -130,4 +132,35 @@ func (g *MIRGenerator) generateConditionalStatement(stmt hir.ConditionalStatemen
 		stmtSeq = append(stmtSeq, falseSeq...)
 	}
 	return stmtSeq
+}
+
+func (g *MIRGenerator) generateLoopStatement(stmt hir.LoopStatement) []Statement {
+	var stmtSeq []Statement
+
+	expStmtSeq, expResultID := g.generateConditionalExp(stmt.Condition)
+	stmtSeq = append(stmtSeq, expStmtSeq...)
+
+	bodySeq := g.generateStatement(*stmt.Body)
+
+	skipLoopStmt := *NewStatement(JZERO, StrParam(hir.VarToStr(expResultID)), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", len(bodySeq)+2)), fmt.Sprintf("while condition %s false : skip loop: goto here+%d", hir.VarToStr(expResultID), len(bodySeq)+2))
+	nextLoopStmt := *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", -(len(bodySeq)+len(expStmtSeq)+1))), fmt.Sprintf("next loop: goto here+%d", -(len(bodySeq)+len(expStmtSeq)+1)))
+
+	stmtSeq = append(stmtSeq, skipLoopStmt)
+	stmtSeq = append(stmtSeq, bodySeq...)
+	stmtSeq = append(stmtSeq, nextLoopStmt)
+
+	ctxNow := g.CtxStack.Top()
+	ctxNow.LoopCondLabel = g.NewLabel()
+	ctxNow.LoopEndLabel = g.NewLabel()
+	g.CtxStack.Push(ctxNow)
+
+	return stmtSeq
+}
+
+func (g *MIRGenerator) generateBreakStatement(stmt hir.BreakStatement) []Statement {
+	return nil
+}
+
+func (g *MIRGenerator) generateContinueStatement(stmt hir.ContinueStatement) []Statement {
+	return nil
 }

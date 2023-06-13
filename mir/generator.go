@@ -24,6 +24,7 @@ type MIRGenerator struct {
 	Program    *Program
 	HIRProgram *hir.Program
 	Vars       map[string]int
+	Labels     map[int]int
 	Methods    map[string]MethodInfo
 	Context    Context
 	CtxStack   *Stack[Context]
@@ -32,8 +33,8 @@ type MIRGenerator struct {
 
 func NewMIRGenerator() *MIRGenerator {
 	context := Context{
-		LoopCondLabel: 0,
-		LoopEndLabel:  0,
+		LoopCondLabel: -1,
+		LoopEndLabel:  -1,
 		MethodIn: MethodInfo{
 			Name: "main",
 		},
@@ -126,4 +127,16 @@ func (g *MIRGenerator) NewMethod(name string) {
 	g.Methods[name] = MethodInfo{
 		Pos: len(g.Methods),
 	}
+}
+
+func (g *MIRGenerator) NewLabel() int {
+	return len(g.Labels) + 1
+}
+
+func (g *MIRGenerator) SetLabel(label, value int) {
+	g.Labels[label] = value
+}
+
+func (g *MIRGenerator) GetLabel(label int) int {
+	return g.Labels[label]
 }

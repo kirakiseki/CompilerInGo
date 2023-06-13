@@ -17,6 +17,12 @@ int main(){
     else{
         ss=33;
     }
+    while(aa>46){
+        ss=68;
+        while(aa>36){
+            ss=38;
+        }
+    }
     call test(56,ss+aa);
     return aa+78;
 }
