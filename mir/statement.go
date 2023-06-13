@@ -3,6 +3,7 @@ package mir
 import (
 	"CompilerInGo/hir"
 	"fmt"
+	"github.com/kpango/glg"
 )
 
 func (g *MIRGenerator) generateStatement(stmt hir.Statement) []Statement {
@@ -17,16 +18,12 @@ func (g *MIRGenerator) generateStatement(stmt hir.Statement) []Statement {
 		return g.generateAssignStatement(stmt.(hir.AssignStatement))
 	case hir.ReturnStatement:
 		return g.generateReturnStatement(stmt.(hir.ReturnStatement))
-	case hir.BreakStatement:
-		return g.generateBreakStatement(stmt.(hir.BreakStatement))
-	case hir.ContinueStatement:
-		return g.generateContinueStatement(stmt.(hir.ContinueStatement))
 	case hir.LocalVariableDeclaration:
 		return g.generateLocalVariableDeclaration(stmt.(hir.LocalVariableDeclaration))
 	case hir.Block:
 		return g.generateBlock(stmt.(hir.Block))
 	default:
-		//glg.Fatal("Unknown statement type")
+		glg.Fatal("Unknown statement type")
 	}
 	return nil
 }
@@ -149,18 +146,17 @@ func (g *MIRGenerator) generateLoopStatement(stmt hir.LoopStatement) []Statement
 	stmtSeq = append(stmtSeq, bodySeq...)
 	stmtSeq = append(stmtSeq, nextLoopStmt)
 
-	ctxNow := g.CtxStack.Top()
-	ctxNow.LoopCondLabel = g.NewLabel()
-	ctxNow.LoopEndLabel = g.NewLabel()
-	g.CtxStack.Push(ctxNow)
-
 	return stmtSeq
 }
 
 func (g *MIRGenerator) generateBreakStatement(stmt hir.BreakStatement) []Statement {
-	return nil
+	var stmtSeq []Statement
+	stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam("_"), "_T_BREAK"))
+	return stmtSeq
 }
 
 func (g *MIRGenerator) generateContinueStatement(stmt hir.ContinueStatement) []Statement {
-	return nil
+	var stmtSeq []Statement
+	stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam("_"), "_T_CONTINUE"))
+	return stmtSeq
 }

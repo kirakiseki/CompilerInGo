@@ -2,6 +2,7 @@ package mir
 
 import (
 	"fmt"
+	"github.com/kpango/glg"
 	"strconv"
 )
 
@@ -56,6 +57,7 @@ func NewProgram() *Program {
 type Param interface {
 	p()
 	Str() string
+	Int() int
 }
 
 type StrParam string
@@ -66,12 +68,29 @@ func (s StrParam) Str() string {
 	return string(s)
 }
 
+func (s StrParam) Int() int {
+	i, err := strconv.Atoi(string(s))
+	if err != nil {
+		glg.Fatal(err)
+	}
+	return i
+}
+
 func (i IntParam) Str() string {
 	return strconv.FormatInt(int64(i), 10)
 }
 
+func (i IntParam) Int() int {
+	return int(i)
+}
+
 func (f FloatParam) Str() string {
 	return strconv.FormatFloat(float64(f), 'f', -1, 64)
+}
+
+func (f FloatParam) Int() int {
+	glg.Fatal("Cannot convert float to int")
+	return 0
 }
 
 type IntParam int64
@@ -90,6 +109,11 @@ func (s *Statement) Str() string {
 		return str
 	}
 	return fmt.Sprintf("%-30s   # %s", str, s.Comment)
+}
+
+func (s *Statement) Int() int {
+	glg.Fatal("Cannot convert statement to int")
+	return 0
 }
 
 type Statement struct {

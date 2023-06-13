@@ -81,32 +81,32 @@ func (g *MIRGenerator) generateCompExp(compExp hir.CompExp) ([]Statement, int) {
 	case ast.EQUAL:
 		stmtSeq = append(stmtSeq, *NewStatement(JNEQUAL, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s == %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s == %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("equal: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s == %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	case ast.DIAMOND:
 		stmtSeq = append(stmtSeq, *NewStatement(JEQUAL, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s != %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s != %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("notEqual: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s != %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	case ast.GREATER:
 		stmtSeq = append(stmtSeq, *NewStatement(JLESSEQUAL, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s > %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s > %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("greater: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s > %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	case ast.GREATEREQUAL:
 		stmtSeq = append(stmtSeq, *NewStatement(JLESS, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s >= %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s >= %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("greaterEqual: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s >= %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	case ast.LESS:
 		stmtSeq = append(stmtSeq, *NewStatement(JGREATEQUAL, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s < %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s < %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("less: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s < %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	case ast.LESSEQUAL:
 		stmtSeq = append(stmtSeq, *NewStatement(JGREAT, StrParam(hir.VarToStr(lExpResultID)), StrParam(hir.VarToStr(rExpResultID)), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 3)), fmt.Sprintf("if %s <= %s false: goto here+3", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID))))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(1), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s <= %s true: %s = 1", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
-		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("goto here+2")))
+		stmtSeq = append(stmtSeq, *NewStatement(JMP, StrParam("_"), StrParam("_"), StrParam(fmt.Sprintf("_T_JMP_REF_%d", 2)), fmt.Sprintf("lessEqual: goto here+2")))
 		stmtSeq = append(stmtSeq, *NewStatement(ASSIGN, StrParam(hir.VarToStr(resultID)), IntParam(0), StrParam(hir.VarToStr(resultID)), fmt.Sprintf("if %s <= %s false: %s = 0", hir.VarToStr(lExpResultID), hir.VarToStr(rExpResultID), hir.VarToStr(resultID))))
 	}
 	return stmtSeq, resultID

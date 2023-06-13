@@ -4,6 +4,7 @@ import (
 	"CompilerInGo/hir"
 	"fmt"
 	"github.com/kpango/glg"
+	"strings"
 )
 
 type Context struct {
@@ -99,7 +100,32 @@ func (g *MIRGenerator) Generate(program *hir.Program) *Program {
 			g.Program.StmtSeq[idx].Res = IntParam(g.Methods[method].Pos + offset)
 		}
 	}
-	_ = offset
+
+	for idx, stmt := range g.Program.StmtSeq {
+		comment := stmt.Comment
+		if comment == "_T_CONTINUE" {
+			for i := idx; i < len(g.Program.StmtSeq); i++ {
+				if strings.HasPrefix(g.Program.StmtSeq[i].Comment, "next loop:") {
+					_ = glg.Warn(g.Program.StmtSeq[i].Str())
+					g.Program.StmtSeq[idx].Res = IntParam(g.Program.StmtSeq[i].Res.Int())
+					break
+				}
+				if i == len(g.Program.StmtSeq)-1 {
+					glg.Fatal("No loop end found")
+				}
+			}
+		} else if comment == "_T_BREAK" {
+			for i := idx; i >= 0; i-- {
+				if strings.HasPrefix(g.Program.StmtSeq[i].Comment, "while condition") {
+					g.Program.StmtSeq[idx].Res = IntParam(g.Program.StmtSeq[i].Res.Int())
+					break
+				}
+				if i == 0 {
+					glg.Fatal("No loop context found")
+				}
+			}
+		}
+	}
 
 	return g.Program
 }
