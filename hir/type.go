@@ -2,6 +2,8 @@ package hir
 
 import "fmt"
 
+// 将ast中的类型转换为hir中的类型
+
 type Literal interface {
 	lit()
 }

@@ -4,6 +4,8 @@ import (
 	"CompilerInGo/parser/ast"
 )
 
+// 将ast中的表达式转换为hir中的表达式类型
+
 type ConditionalExp struct {
 	LExp RelationExp
 	Op   int

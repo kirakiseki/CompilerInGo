@@ -1,5 +1,7 @@
 package hir
 
+// 将ast中的statement整合转换为hir中的statement
+
 type Statement interface {
 	stmt()
 }

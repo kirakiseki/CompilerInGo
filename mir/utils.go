@@ -2,6 +2,7 @@ package mir
 
 import "github.com/kpango/glg"
 
+// Stack 使用泛型实现的栈
 type Stack[T any] struct {
 	Elems []T
 	Size  int

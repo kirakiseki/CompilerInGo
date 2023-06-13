@@ -6,6 +6,7 @@ import (
 	"strconv"
 )
 
+// 操作符
 const (
 	ERROR = iota
 	ASSIGN
@@ -25,6 +26,7 @@ const (
 	STOP
 )
 
+// OpString 操作符字符串，输出用
 var OpString = map[int]string{
 	ERROR:       "ERROR",
 	ASSIGN:      "=",
@@ -44,6 +46,7 @@ var OpString = map[int]string{
 	STOP:        "STOP",
 }
 
+// Program 输出的中间代码，四元式格式
 type Program struct {
 	StmtSeq []Statement
 }
@@ -54,6 +57,7 @@ func NewProgram() *Program {
 	}
 }
 
+// Param 参数，可以是IntParam, FloatParam, StrParam， *Statement
 type Param interface {
 	p()
 	Str() string
@@ -104,7 +108,7 @@ func (f FloatParam) p() {}
 func (s *Statement) p() {}
 
 func (s *Statement) Str() string {
-	str := fmt.Sprintf("(%s, %s, %s, %s)", OpString[s.Op], s.Arg1.Str(), s.Arg2.Str(), s.Res.Str())
+	str := fmt.Sprintf("( %4s, %4s, %4s, %4s)", OpString[s.Op], s.Arg1.Str(), s.Arg2.Str(), s.Res.Str())
 	if s.Comment == "" {
 		return str
 	}
@@ -116,12 +120,13 @@ func (s *Statement) Int() int {
 	return 0
 }
 
+// Statement 四元式语句
 type Statement struct {
-	Op      int
-	Arg1    Param
-	Arg2    Param
-	Res     Param
-	Comment string
+	Op      int    // 操作符
+	Arg1    Param  // 参数1
+	Arg2    Param  // 参数2
+	Res     Param  // 结果
+	Comment string // 注释
 }
 
 func NewStatement(op int, arg1, arg2, res Param, comm string) *Statement {
@@ -134,6 +139,7 @@ func NewStatement(op int, arg1, arg2, res Param, comm string) *Statement {
 	}
 }
 
+// Label 生成一个新的标签
 func (p *Program) Label() int {
 	return len(p.StmtSeq) - 1
 }

@@ -5,6 +5,9 @@ import (
 	"CompilerInGo/parser/ast"
 )
 
+// 兼容层 Compat
+// 将AST中的数据结构转换为HIR中的数据结构
+
 type AstType ast.Type
 type AstResultType ast.ResultType
 type AstTypeIDPair ast.TypeIDPair
